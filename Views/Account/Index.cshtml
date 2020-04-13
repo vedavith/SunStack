@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<h1>Welcome to MyStackOverFlow !!!</h1>
+<br />
+@if (Request.IsAuthenticated)
+{
+
+    <span>Welcome @Html.Encode(User.Identity.Name) </span>
+}
+else
+{
+
+   <h2><button> @Html.ActionLink("Login", "Login", "Account")</button></h2>
+    <br />
+   <h2><button> @Html.ActionLink("Register", "Register", "Account")</button></h2>
+}
+
