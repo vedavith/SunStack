@@ -95,7 +95,7 @@ namespace LoginRegistrationInMVCWithDatabase.Controllers
                     return user;
             }
         }
-
+        // Used to log out 
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
